@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>
+ŇĞŘỖЌ
+</title>
+</head>
+<body dir="rtl"bgcolor="black"LINK="green"
+VLINK="white"
+alink="red"><font size="20"color="white">
+<form> 
+<a href="termax.html">للرجوع</a><br>
+<center><i><u><b>تثبيت اداة نجروك ngrok على التيرمكس termux وحل جميع المشاكل</b></u></i></center><br>
+سنتحدث في هذا الدرس عن اداة نجروك ngrok المشهورة بفتح البورتات في التيرمكس و عن كيفية تحميلها من موقعها الرسمي و تثبيتها لدينا على هاتفنا.<br>
+ندخل للموقع الرسمي للأداة وهو ( ngrok.com ) ونضغط على login في حال لدينا حساب سابق في الموقع , و الضغط على sign up في حال انك مستخدم جديد في الموقع .<br><br>
+
+
+
+نضغط على sign up لننشأ حساب جديد<br><br>
+
+
+بعد ذلك نضغط على Create an account لينتشأ لدينا حساب كالتالي.<br><br>
+
+
+نضغط على تحميل Download for Linux ليبدأ بتحميل ملف الاداة المضغوط على جهازنا, ننتظر لحين انتهاء التحميل و ننقل الملف من مجلد التحميلات Downloadsالى الذاكرة الداخليه للهاتف ( اي بذاكرة الهاتف خارج المجلدات ).<br>
+نفتح الآن تطبيق تيرمكس و نكتب الاوامر التالية بالترتيب <br><br>
+apt update<br><br>
+apt upgrade<br><br>
+pkg install proot<br><br>
+termux-chroot<br><br>
+بعدما كتبنا هذه الاوامر نأتي لتنصيب النجروك الآن بكتابة هذه الأوامر بالترتيب <br><br>
+cd /sdcard<br><br>
+ls<br><br>
+  mv ngrok-stable-linux-arm.zip $HOME<br><br>
+cd <br><br>
+ls<br><br>
+unzip ngrok-stable-linux-arm.zip<br><br>
+ls<br><br>
+rm -rf ngrok-stable-linux-arm.zip<br><br>
+ننسخ الامر رقم 3 من موقع الاداة ولصقه في تيرمكس<br><br>
+ls<br><br>
+termux-chroot<br><br>
+ls<br><br>
+./ngrok tcp 4444<br><br>
+
+هذا هو السطر الذي ننسخة من الرقم 3 ولصقه في تيرمكس كما ذكرنا قبل قليل.<br><br>
+الى هنا انتهينا من تثبيت الأداة بنجاه وسيظهر كلمهonline باللون الاخضر في الاعلى.
+</form> 
+</font> 
+</body> 
+</html> 
